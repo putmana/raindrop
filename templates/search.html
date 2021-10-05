@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %} Hello world! {% endblock %}
+{% block content %}
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-auto">
+            <h1>Class Schedule Lookup</h1>
+        </div>
+    </div>
+    <div class="container-md">
+        <form>
+            <div class="row justify-content-center mt-3">
+                <div class="col-lg-9">
+                    <label for="class_search_box" class="form-label form-label-large">Search for a class:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control hide-border-right" id="class_search_box">
+                        <button class="btn btn-primary" type="submit">Go</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-2">
+                <div class="col-lg-3 mb-2">
+                    <div class="form-label-large mb-1">Department</div>
+    
+                    <div>
+                        <input class="form-check-input" type="checkbox" id="department_csci" name="department" value="csci">
+                        <label for="department_csci" class="form-check-label">CSCI</label>
+                    </div>
+    
+                    <div>
+                        <input class="form-check-input" type="checkbox" id="department_capp" name="department" value="capp">
+                        <label for="department_csci" class="form-check-label mb-0">CAPP</label>
+                    </div>
+    
+                    <div>
+                        <input class="form-check-input" type="checkbox" id="department_its" name="department" value="its">
+                        <label for="department_csci" class="form-check-label">ITS</label>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 mb-2">
+                    <div class="form-label-large mb-1">Semester</div>
+    
+                    <div>
+                        <input class="form-check-input" type="checkbox" id="semester_fall" name="semester" value="fall">
+                        <label for="semester_fall" class="form-check-label">Fall</label>
+                    </div>
+    
+                    <div>
+                        <input class="form-check-input" type="checkbox" id="semester_spring" name="semester" value="spring">
+                        <label for="semester_spring" class="form-check-label mb-0">Spring</label>
+                    </div>
+    
+                    <div>
+                        <input class="form-check-input" type="checkbox" id="semester_summer" name="semester" value="summer">
+                        <label for="semester_summer" class="form-check-label">Summer</label>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 mb-2">
+                    <div class="form-label-large mb-1">Year</div>
+                    <select class="form-select">
+                        <option value="2022">2022</option>
+                        <option selected value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    
+    
+{% endblock %}

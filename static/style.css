@@ -1,5 +1,7 @@
 :root {
-    --green: rgb(131, 205, 74);
+    --blue: rgb(37, 53, 106);
+    --lblue: rgb(134, 159, 241);
+    --gold: rgb(235, 190, 57);
     --vdgrey: rgb(30, 30, 30);
     --dgrey: rgb(40, 40, 40);
     --mgrey: rgb(60, 60, 60);
@@ -12,8 +14,8 @@
 body {
     font-family: protipo, sans-serif;
     font-style: normal;
-    color: white;
-    background-color: var(--dgrey);
+    color: var(--dgrey);
+    background-color: white;
 }
 
 h1,
@@ -30,11 +32,11 @@ a {
 }
 
 a:hover{
-    color: var(--green);
+    color: var(--blue);
 }
 
 .page-header {
-    color: var(--green);
+    color: var(--blue);
 }
 
 .content {
@@ -44,30 +46,32 @@ a:hover{
 }
 
 .navbar {
-    background-color: var(--vdgrey);
+    background-color: var(--blue);
     text-transform: uppercase;
 }
 
 .navbar-brand {
     font-weight: 700;
-    color: var(--green) !important;
+    color: var(--gold) !important;
+    padding: 0 !important;
 }
 
 .nav-link {
-    color: var(--vlgrey);
+    color: white;
     font-weight: 700;
+    font-size: 14pt;
 }
 
 .nav-link:active {
-    color: var(--lgrey);
+    color: white;
 }
 
 .nav-link:hover {
-    color: var(--green);
+    color: var(--gold);
 }
 
 .nav-link:hover:active {
-    color: var(--lgrey);
+    color: var(--gold);
 }
 
 .nav-link:focus {
@@ -75,90 +79,94 @@ a:hover{
 }
 
 .btn-primary {
-    color: var(--dgrey);
-    background-color: var(--green);
+    color: white;
+    background-color: var(--blue);
     font-weight: 700;
     text-transform: uppercase;
     border-width: 2px;
-    border-color: var(--green);
+    border-color: var(--blue);
 }
 
 .btn-primary:disabled {
-    color: var(--mgrey);
-    background-color: var(--green);
+    color: white;
+    background-color: var(--blue);
     font-weight: 700;
     text-transform: uppercase;
     border-width: 2px;
-    border-color: var(--green);
+    border-color: var(--blue);
     opacity: .5;
 }
 
 .btn-primary:focus {
     color: white;
-    background-color: var(--green);
+    background-color: var(--blue);
     font-weight: 700;
     text-transform: uppercase;
+    border-style: dashed;
     border-width: 2px;
-    border-color: var(--green);
+    border-color: var(--lblue);
     box-shadow: none;
 }
 
 .btn-primary:active {
-    color: var(--green);
+    color: var(--blue);
     background-color: var(--lgrey);
     font-weight: 700;
     text-transform: uppercase;
+    border-style: solid;
     border-width: 2px;
-    border-color: var(--green);
-    box-shadow: 3px 3px var(--green);
+    border-color: var(--blue);
 }
 
 .btn-primary:hover {
-    color: var(--green);
+    color: var(--blue);
+    background-color: var(--gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--blue);
+    box-shadow: none;
+}
+
+.btn-primary:hover:active {
+    color: var(--blue);
+    background-color: var(--gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--blue);
+    box-shadow: none;
+}
+
+.btn-secondary {
+    color: white;
     background-color: var(--mgrey);
     font-weight: 700;
     text-transform: uppercase;
     border-width: 2px;
-    border-color: var(--green);
-    box-shadow: 3px 3px var(--green);
-}
-
-.btn-primary:hover:active {
-    color: var(--green);
-    background-color: var(--lgrey);
-    font-weight: 700;
-    text-transform: uppercase;
-    border-width: 2px;
-    border-color: var(--green);
-    box-shadow: 1px 1px var(--green);
-}
-
-.btn-secondary {
-    color: var(--dgrey);
-    background-color: var(--vlgrey);
-    font-weight: 700;
-    text-transform: uppercase;
-    border-width: 2px;
-    border-color: var(--vlgrey);
+    border-color: var(--mgrey);
 }
 
 .btn-secondary:disabled {
-    color: var(--dgrey);
-    background-color: var(--vlgrey);
+    color: white;
+    background-color: var(--mgrey);
     font-weight: 700;
     text-transform: uppercase;
     border-width: 2px;
-    border-color: var(--vlgrey);
+    border-color: var(--mgrey);
     opacity: .5;
 }
 
 .btn-secondary:focus {
     color: white;
-    background-color: var(--vlgrey);
+    background-color: var(--mgrey);
     font-weight: 700;
     text-transform: uppercase;
+    border-style: dashed;
     border-width: 2px;
-    border-color: var(--vlgrey);
+    border-color: var(--lgrey);
     box-shadow: none;
 }
 
@@ -167,33 +175,36 @@ a:hover{
     background-color: var(--mgrey);
     font-weight: 700;
     text-transform: uppercase;
+    border-style: solid;
     border-width: 2px;
     border-color: var(--vlgrey);
     box-shadow: 3px 3px var(--vlgrey);
 }
 
 .btn-secondary:hover {
-    color: var(--vlgrey);
-    background-color: var(--mgrey);
+    color: var(--mgrey);
+    background-color: var(--vlgrey);
     font-weight: 700;
     text-transform: uppercase;
+    border-style: solid;
     border-width: 2px;
-    border-color: var(--vlgrey);
-    box-shadow: 3px 3px var(--vlgrey);
+    border-color: var(--mgrey);
+    box-shadow: none;
 }
 
 .btn-secondary:hover:active {
-    color: var(--vlgrey);
-    background-color: var(--lgrey);
+    color: var(--mgrey);
+    background-color: var(--vlgrey);
     font-weight: 700;
     text-transform: uppercase;
+    border-style: solid;
     border-width: 2px;
-    border-color: var(--vlgrey);
-    box-shadow: 1px 1px var(--vlgrey);
+    border-color: var(--mgrey);
+    box-shadow: none;
 }
 
 .ddn-icon {
-    color: var(--green);
+    color: white;
     font-size: 22pt;
     font-weight: 700;
     padding: none;
@@ -228,7 +239,7 @@ a:hover{
 }
 
 .overlay-box-header {
-    color: var(--green);
+    color: var(--blue);
 }
 
 .overlay-box-text {
@@ -243,56 +254,77 @@ a:hover{
 }
 
 .form-control {
-    border-color: var(--lgrey);
-    color: white;
-    background-color: var(--mgrey);
+    border-color: var(--mgrey);
+    border-width: 2px;
+    color: var(--mgrey);
+    background-color: white;
     box-shadow: none;
 }
 
 .form-control:focus {
-    border-color: white;
-    color: white;
-    background-color: var(--mgrey);
+    border-color: var(--blue);
+    border-width: 2px;
+    color: var(--mgrey);
+    background-color: var(--vlgrey);
     box-shadow: none;
 }
 
+.hide-border-left {
+    border-left-style: none;
+}
+
+.hide-border-right {
+    border-right-style: none;
+}
+
 .form-check-input {
-    background-color: var(--mgrey) !important;
-    border-color: var(--lgrey) !important;
+    background-color: white !important;
+    border-color: var(--mgrey) !important;
+    border-width: 2px !important;
     box-shadow: none !important;
 }
 
 .form-check-input:hover {
-    border-color: white !important;
+    border-color: var(--blue) !important;
+    border-width: 2px !important;
     box-shadow: none !important;
 }
 
 .form-check-input:focus {
-    border-color: white !important;
+    border-color: var(--blue) !important;
+    border-width: 2px !important;
     box-shadow: none !important;
 }
 
 .form-check-input:checked {
-    color: var(--dgrey) !important;
-    background-color: var(--green) !important;
-    border-color: var(--green) !important;
+    color: white !important;
+    background-color: var(--blue) !important;
+    border-color: var(--blue) !important;
+    border-width: 2px !important;
     box-shadow: none !important;
 }
 
 .form-select {
-    border-color: var(--lgrey);
-    color: white;
-    background-color: var(--mgrey);
+    border-color: var(--mgrey);
+    border-width: 2px;
+    color: var(--mgrey);
+    background-color: var(--white);
     box-shadow: none;
 }
 
 .form-select:focus {
-    border-color: white;
-    color: white;
-    background-color: var(--mgrey);
+    border-color: var(--blue);
+    color: var(--blue);
+    background-color: var(--vlgrey);
     box-shadow: none;
 }
 
 .form-select option:focus{
-    background-color: var(--green) !important; 
+    background-color: var(--blue) !important; 
+}
+
+.form-label-large{
+    font-size: 14pt;
+    color: var(--blue);
+    font-weight: 700;
 }
