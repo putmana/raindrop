@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %} Class Lookup {% endblock %}
+{% block content %}
+
+    
+    <div class="container-lg">
+        <form>
+            <div class="row mt-3">
+                <div class="col-lg-6">
+                    <label for="class_search_box" class="form-label form-label-large">Search for a class:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control hide-border-right" id="class_search_box">
+                        <button class="btn btn-primary" type="submit">Go</button>
+                    </div>
+                </div>
+            </div>
+
+            
+        </form>
+        <div class="row course-card mb-4">
+            <div class="row">
+                <div class="col-md-auto">
+                    <h4 class="course-card-header mb-3">CSCI 223</h4>
+                </div>
+                <div class="col-md-auto">
+                    <h4 class="course-card-header mb-3">Software Development</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>General</h5>
+                    <h6 class="course-info"><b>Instructor:</b> Ben Johnson</h6>
+                    <h6 class="course-info"><b>Semester:</b> Fall</h6>
+                    <h6 class="course-info"><b>Mode:</b> In Person</h6>
+                    <h6 class="course-info"><b>Type:</b> Lecture</h6>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Location</h5>
+                    <h6 class="course-info"><b>Campus:</b> City College</h6>
+                    <h6 class="course-info"><b>Hall:</b> Tech Building</h6>
+                    <h6 class="course-info"><b>Room:</b> B049</h6>
+                </div>
+                <div class="col-md-4">
+                    <h5>Dates & Times</h5>
+                    <h6 class="course-info"><b>Start Date:</b> September 8, 2021</h6>
+                    <h6 class="course-info"><b>End Date:</b> December 16, 2021</h6>
+                    <h6 class="course-info"><b>Days:</b> Mon, Tue, Wed, Thu</h6>
+                    <h6 class="course-info"><b>Time:</b> 3:00 PM - 4:00 PM</h6>
+                </div> 
+            </div>
+        </div>
+
+        <div class="row course-card mb-4">
+            <div class="row">
+                <div class="col-md-auto">
+                    <h4 class="course-card-header mb-3">CSCI 214</h4>
+                </div>
+                <div class="col-md-auto">
+                    <h4 class="course-card-header mb-3">Server-Side Web Prog & Admin</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>General</h5>
+                    <h6 class="course-info"><b>Instructor:</b> John Pannell</h6>
+                    <h6 class="course-info"><b>Semester:</b> Fall</h6>
+                    <h6 class="course-info"><b>Mode:</b> Hyflex</h6>
+                    <h6 class="course-info"><b>Type:</b> Lecture/Lab</h6>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Location</h5>
+                    <h6 class="course-info"><b>Campus:</b> City College</h6>
+                    <h6 class="course-info"><b>Hall:</b> Tech Building</h6>
+                    <h6 class="course-info"><b>Room:</b> B056</h6>
+                </div>
+                <div class="col-md-4">
+                    <h5>Dates & Times</h5>
+                    <h6 class="course-info"><b>Start Date:</b> September 8, 2021</h6>
+                    <h6 class="course-info"><b>End Date:</b> December 16, 2021</h6>
+                    <h6 class="course-info"><b>Days:</b> Tue, Thu</h6>
+                    <h6 class="course-info"><b>Time:</b> 1:50 PM - 2:50 PM</h6>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+    
+    
+{% endblock %}

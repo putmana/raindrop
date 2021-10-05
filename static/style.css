@@ -7,6 +7,7 @@
     --mgrey: rgb(60, 60, 60);
     --lgrey: rgb(140, 140, 140);
     --vlgrey: rgb(200, 200, 200);
+    --offwhite: rgb(232, 232, 232);
     
     --tdgrey: rgba(30, 30, 30, 0.75);
 }
@@ -319,12 +320,34 @@ a:hover{
     box-shadow: none;
 }
 
-.form-select option:focus{
+.form-select option:focus {
     background-color: var(--blue) !important; 
 }
 
-.form-label-large{
+.form-label-large {
     font-size: 14pt;
     color: var(--blue);
     font-weight: 700;
+}
+
+.course-card {
+    background-color: var(--offwhite);
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--offwhite);
+    padding: 1rem;
+    width: 100%;
+    margin-right: 0;
+}
+
+.course-card-header {
+    color: var(--blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18pt;
+}
+
+.course-info {
+    font-weight: normal;
 }
